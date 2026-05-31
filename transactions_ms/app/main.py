@@ -12,19 +12,20 @@ from common.config import (
     RABBITMQ_QUEUE,
 )
 
-credentials = pika.PlainCredentials(
-    RABBITMQ_USER,
-    RABBITMQ_PASSWORD
-)
-
-parameters = pika.ConnectionParameters(
-    RABBITMQ_HOST,
-    RABBITMQ_PORT,
-    RABBITMQ_VHOST,
-    credentials
-)
 
 def main():
+    credentials = pika.PlainCredentials(
+        RABBITMQ_USER,
+        RABBITMQ_PASSWORD
+    )
+
+    parameters = pika.ConnectionParameters(
+        RABBITMQ_HOST,
+        RABBITMQ_PORT,
+        RABBITMQ_VHOST,
+        credentials
+    )
+
     publisher = RabbitMQTransactionPublisher(parameters, RABBITMQ_QUEUE)
     use_case = RegisterTransaction(publisher)
     transaction = Transaction(
