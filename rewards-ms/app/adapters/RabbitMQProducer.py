@@ -1,6 +1,6 @@
 import pika
 import json
-from ..config import (
+from app.config import (
     RABBITMQ_HOST,
     RABBITMQ_PORT,
     RABBITMQ_USER,

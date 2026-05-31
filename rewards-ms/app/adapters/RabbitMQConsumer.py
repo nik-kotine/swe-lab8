@@ -3,11 +3,11 @@ import sys
 import os
 import json
 
-from ..domain.RewardCalculator import RewardCalculator
-from ..domain.TransactionReceived import TransactionReceived
-from ..application.ProcessReward import ProcessReward
-from ..adapters.SQLiteRewardRepository import SQLiteRewardRepository
-from ..config import (
+from app.domain.RewardCalculator import RewardCalculator
+from app.domain.TransactionReceived import TransactionReceived
+from app.application.ProcessReward import ProcessReward
+from app.adapters.SQLiteRewardRepository import SQLiteRewardRepository
+from app.config import (
     RABBITMQ_HOST,
     RABBITMQ_PORT,
     RABBITMQ_USER,

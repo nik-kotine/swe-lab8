@@ -1,7 +1,7 @@
-from ..domain.RewardCalculator import RewardCalculator
-from ..domain.Reward import Reward
-from ..domain.TransactionReceived import TransactionReceived
-from ..ports.RewardRepository import RewardRepository
+from app.domain.RewardCalculator import RewardCalculator
+from app.domain.Reward import Reward
+from app.domain.TransactionReceived import TransactionReceived
+from app.ports.RewardRepository import RewardRepository
 
 class ProcessReward:
     calculator: RewardCalculator
