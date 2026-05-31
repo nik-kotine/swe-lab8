@@ -24,18 +24,18 @@ parameters = pika.ConnectionParameters(
     credentials
 )
 
-publisher = RabbitMQTransactionPublisher(parameters, RABBITMQ_QUEUE)
+def main():
+    publisher = RabbitMQTransactionPublisher(parameters, RABBITMQ_QUEUE)
+    use_case = RegisterTransaction(publisher)
+    transaction = Transaction(
+        user_id = "JOHNID",
+        amount = 50,
+        user_card = "JOHN-CARD-6767-8989",
+        restaurant_id = "R001",
+        date = datetime.now()
+    )
+    use_case.execute(transaction)
+    print("[!] Transacción publicada")
 
-use_case = RegisterTransaction(publisher)
-
-transaction = Transaction(
-    user_id = "JOHNID",
-    amount = 50,
-    user_card = "JOHN-CARD-6767-8989",
-    restaurant_id = "R001",
-    date = datetime.now()
-)
-
-use_case.execute(transaction)
-
-print("[!] Transacción publicada")
+if __name__ == "__main__":
+    main()

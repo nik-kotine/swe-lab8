@@ -1,6 +1,6 @@
 import pika
 import json
-from rewards_ms.app.config import (
+from common.config import (
     RABBITMQ_HOST,
     RABBITMQ_PORT,
     RABBITMQ_USER,

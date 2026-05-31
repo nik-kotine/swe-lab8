@@ -5,7 +5,7 @@ from rewards_ms.app.domain.RewardCalculator import RewardCalculator
 from rewards_ms.app.domain.TransactionReceived import TransactionReceived
 from rewards_ms.app.application.ProcessReward import ProcessReward
 from rewards_ms.app.adapters.SQLiteRewardRepository import SQLiteRewardRepository
-from rewards_ms.app.config import (
+from common.config import (
     RABBITMQ_HOST,
     RABBITMQ_PORT,
     RABBITMQ_USER,

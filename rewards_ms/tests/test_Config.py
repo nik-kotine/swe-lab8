@@ -1,5 +1,5 @@
 import pytest
-from rewards_ms.app.config import require_env_variable
+from common.config import require_env_variable
 
 def test_RequireEnvVariableShoulRaiseErrorWhenMissing():
     with pytest.raises(RuntimeError):

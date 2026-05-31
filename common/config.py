@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 
-BASE_DIR = Path(__file__).resolve().parents[2]
+BASE_DIR = Path(__file__).resolve().parents[1]
 load_dotenv(BASE_DIR / ".env")
 
 def require_env_variable(name) -> str:
@@ -20,3 +20,4 @@ RABBITMQ_PASSWORD = require_env_variable("RABBITMQ_PASSWORD")
 RABBITMQ_VHOST = require_env_variable("RABBITMQ_VHOST")
 RABBITMQ_QUEUE = require_env_variable("RABBITMQ_QUEUE")
 REWARDS_DB = require_env_variable("REWARDS_DB")
+SONAR_TOKEN = require_env_variable("SONAR_TOKEN")

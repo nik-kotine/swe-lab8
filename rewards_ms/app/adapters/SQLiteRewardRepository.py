@@ -1,7 +1,7 @@
 import sqlite3
 from rewards_ms.app.ports.RewardRepository import RewardRepository
 from pathlib import Path
-from rewards_ms.app.config import REWARDS_DB
+from common.config import REWARDS_DB
 
 QUERIES_DIR = Path(__file__).resolve().parent / "queries"
 
