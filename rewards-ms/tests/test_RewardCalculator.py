@@ -1,4 +1,4 @@
-from ..app.domain.RewardCalculator import RewardCalculator
+from app.domain.RewardCalculator import RewardCalculator
 import pytest
 
 def test_CalculatePositiveAmountShouldReturnValue():
