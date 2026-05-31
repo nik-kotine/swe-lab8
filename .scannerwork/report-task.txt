@@ -1,0 +1,6 @@
+projectKey=Matias_Walde_t1
+serverUrl=https://sonarqube.ingsoftware.lat
+serverVersion=26.5.0.122743
+dashboardUrl=https://sonarqube.ingsoftware.lat/dashboard?id=Matias_Walde_t1
+ceTaskId=3c80c338-7edf-4b94-b2f9-5f0aed246523
+ceTaskUrl=https://sonarqube.ingsoftware.lat/api/ce/task?id=3c80c338-7edf-4b94-b2f9-5f0aed246523
